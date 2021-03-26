@@ -6,10 +6,18 @@ function generatePage(answers) {
 
   ${answers.description}
 
-  ## Table of Contents (Optional)
+  ## Table of Contents
+  
+  * Installation (#Installation)
+  * Technology (#Technology)
+  * Usage (#Usage)
+  * Credit (#Credit)
+  * License (#License)
+  * Feature (#Feature)
+  * Test (#Test)
 
-  * ${answers.tableOfContents}
-
+  ## Technology
+  ${answers.technology.join(',')}
 
   ## Installation
 
@@ -28,11 +36,11 @@ function generatePage(answers) {
 
   ${answers.license} License
 
-  ## Feature (Optional)
+  ## Feature 
 
   ${answers.feature}
 
-  ## Test (Optional)
+  ## Test 
 
   ${answers.tests}
   `;

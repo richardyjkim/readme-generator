@@ -30,17 +30,10 @@ const promptProject = () => {
       }
     },
     {
-      type: 'confirm',
-      name: 'confirmTable',
-      message: 'Would you like to have Table of Contents on your README? (Optional)',
-      default: true
-    },
-    {
       type: 'checkbox',
-      name: 'tableOfContents',
-      message: 'which of the following would you like to add? (Check all that apply)',
-      choices: ['Installation', 'Usage', 'Credit', 'Licence', 'Features', 'Tests'],
-      when: ({ confirmTable }) => confirmTable
+      name: 'technology',
+      message: 'which of the following would did you use to build your porjecy (Check all that apply)',
+      choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node'],
     },
     {
       type: 'input',
@@ -110,7 +103,7 @@ promptProject().then(projectData => {
   fs.writeFile('./README.md', generateReadme, err => {
     if (err) throw new Error(err);
 
-    console.log("README has been Created");
+    console.log("Your README has been Created");
   });
 });
 
