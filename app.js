@@ -94,6 +94,30 @@ const promptProject = () => {
       name: "tests",
       message: "If there is any, Please provide examples on how to run them."
     },
+    {
+      type: "input",
+      name: "github",
+      message: "Please provide your Github username for questions.",
+      validate: githubInput => {
+        if (githubInput) {
+          return true;
+        } else {
+          console.log('Please provide valid Github link')
+        }
+      }
+    },
+    {
+      type: "input",
+      name: "email",
+      message: "Please provide your email for questions.",
+      validate: emailInput => {
+        if (emailInput) {
+          return true;
+        } else {
+          console.log('Please provide valid email address')
+        }
+      }
+    },
   ])
 };
 

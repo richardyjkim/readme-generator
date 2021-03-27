@@ -2,26 +2,28 @@ function generatePage(answers) {
   return `
   # ${answers.title}
 
+  ![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)<br />
   ## Description 
 
   ${answers.description}
 
   ## Table of Contents
   
-  * Installation (#Installation)
-  * Technology (#Technology)
-  * Usage (#Usage)
-  * Credit (#Credit)
-  * License (#License)
-  * Feature (#Feature)
-  * Test (#Test)
-
-  ## Technology
-  ${answers.technology.join(',')}
+  - [Installation](#installation)
+  - [Technology](#technology)
+  - [Usage](#usage)
+  - [Credit](#credit)
+  - [License](#license)
+  - [Feature](#feature)
+  - [Test](#test)
+  - [Questions](#questions)
 
   ## Installation
 
   ${answers.installation}
+
+  ## Technology
+  ${answers.technology.join(',')}
 
   ## Usage 
 
@@ -34,7 +36,7 @@ function generatePage(answers) {
 
   ## License
 
-  ${answers.license} License
+  this project is coner under ${answers.license} License (https://choosealicense.com/licenses/${answers.license}/)
 
   ## Feature 
 
@@ -43,7 +45,14 @@ function generatePage(answers) {
   ## Test 
 
   ${answers.tests}
+
+  ## Questions
+  
+  If you have any Questions, please do not hesitate to contact me one: 
+  -[${answers.github}](https://github.com/${answers.username})
+  -[${answers.email}]
   `;
+
 }
 
 module.exports = generatePage;
