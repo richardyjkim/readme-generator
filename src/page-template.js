@@ -36,7 +36,7 @@ function generatePage(answers) {
 
   ## License
 
-  this project is coner under ${answers.license} License (https://choosealicense.com/licenses/${answers.license}/)
+  this project is cover under ${answers.license} License (https://choosealicense.com/licenses/${answers.license}/)
 
   ## Feature 
 
