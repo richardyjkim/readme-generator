@@ -35,7 +35,7 @@
 
   ## License
 
-  this project is cover under MIT License (https://choosealicense.com/licenses/MIT/)
+  This project is cover under MIT License (https://choosealicense.com/licenses/MIT/)
 
   ## Feature 
 
