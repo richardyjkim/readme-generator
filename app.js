@@ -81,7 +81,7 @@ const promptProject = () => {
       type: 'confirm',
       name: 'confirmFeature',
       message: 'Would you like to feature this project? (Optional)',
-      default: false
+      default: true
     },
     {
       type: 'input',

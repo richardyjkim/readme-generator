@@ -23,7 +23,7 @@ function generatePage(answers) {
   ${answers.installation}
 
   ## Technology
-  ${answers.technology.join(',')}
+  ${answers.technology.join(', ')}
 
   ## Usage 
 
@@ -49,8 +49,10 @@ function generatePage(answers) {
   ## Questions
   
   If you have any Questions, please do not hesitate to contact me one: 
-  -[${answers.github}](https://github.com/${answers.username})
-  -[${answers.email}]
+
+  -Github: [${answers.github}](https://github.com/${answers.github})
+  
+  -Email: ${answers.email}
   `;
 
 }
